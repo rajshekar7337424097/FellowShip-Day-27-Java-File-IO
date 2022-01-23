@@ -1,0 +1,3 @@
+firstname=Rajashekar, lastName=Reddy, phoneNumber=9898979898, email=rajashekar@gmail.com, address=uppal, city=hyderabad, state=telangana, zipCode=500039
+firstname=Murali, lastName=Sharma, phoneNumber=9188878998, email=murali123@gmail.com, address=Ngo's colony, city=kadapa, state=Andhrapradesh, zipCode=5324213
+firstname=Narendhra, lastName=Reddy, phoneNumber=7234560912, email=narendhra@gmail.com, address=sbi colony, city=nandyal, state=Andhra pradesh, zipCode=5239187
