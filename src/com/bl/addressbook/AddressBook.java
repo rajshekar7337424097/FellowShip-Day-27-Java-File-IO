@@ -64,7 +64,7 @@ public class AddressBook {
 	}
 
 	private static String validateState(String state, Scanner sc) {
-		String resultPattern = "^[A-Z]{1}[a-z]{2-9}$";
+		String resultPattern = "^[A-Z]{1}[a-z]{2,9}$";
 		Pattern regex = Pattern.compile(resultPattern);
 		Matcher inputMatcher = regex.matcher(state);
 		
@@ -78,7 +78,7 @@ public class AddressBook {
 	}
 
 	private static String validateCity(String city, Scanner sc) {
-		String resultPattern = "^[A-Z]{1}[a-z]{2-9}$";
+		String resultPattern = "^[A-Z]{1}[a-z]{2,9}$";
 		Pattern regex = Pattern.compile(resultPattern);
 		Matcher inputMatcher = regex.matcher(city);
 		
@@ -118,7 +118,7 @@ public class AddressBook {
 	}
 
 	private static String validateLastName(String lastName, Scanner sc) {
-		String resultPattern = "^[A-Z]{1}[a-z]{3-9}$";
+		String resultPattern = "^[A-Z]{1}[a-z]{3,9}$";
 		Pattern regex = Pattern.compile(resultPattern);
 		Matcher inputMatcher = regex.matcher(lastName);
 		
@@ -132,7 +132,7 @@ public class AddressBook {
 	}
 
 	private static String validateFirstName(String firstName, Scanner sc) {
-		String resultPattern = "^[A-Z]{1}[a-z]{3-9}$";
+		String resultPattern = "^[A-Z]{1}[a-z]{3,9}$";
 		Pattern regex = Pattern.compile(resultPattern);
 		Matcher inputMatcher = regex.matcher(firstName);
 		

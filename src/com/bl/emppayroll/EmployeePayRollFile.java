@@ -33,7 +33,7 @@ public class EmployeePayRollFile {
 		return count;
 	}
 
-	public List<Employee> getEmpPayRollData(){
+	public static List<Employee> getEmpPayRollData(){
 		System.out.println("Storing emp Date from file to obj");
 		List<Employee> empDataFromFile = new ArrayList<>();
 
@@ -49,5 +49,16 @@ public class EmployeePayRollFile {
 			e.printStackTrace();
 		}
 		return empDataFromFile;
+	}
+
+	public void readEmpData() {
+		
+		try {
+			System.out.println("Read Data From File");
+			Files.lines(Paths.get(EMP_FILE_PATH)).map(line-> line.trim()).forEach(System.out::println);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 }
